@@ -36,3 +36,48 @@ body {
 .intagram-celular img {
     height: 50rem;
 }
+
+/*Alinhando conteúdo*/
+.intagram-continue {
+    display: flex;
+    align-items: center;/*Horizontal*/
+    justify-content: space-around; /*Vertical*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+/*nth-child ele pega os filhos daquele grupo*/
+
+/*Altura da logo e descrição, como login, perfil e aplicativo*/
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+/*Logo do instagram tamanho*/
+.instagram-logo {
+    height: 3rem;
+}
+
+/*Foto de perfil tamanho e dimensão*/
+.perfilfoto {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfilfoto img {
+    height: 3rem;
+}
